@@ -2,6 +2,10 @@ from Person import Person
 
 def compare(a: Person, b: Person):
     if (a.uid < b.uid):
-        return True
+        return -1
     
-    return False
+    if (a.uid == b.uid):
+        return 0
+    
+    if (a.uid > b.uid):
+        return 1
