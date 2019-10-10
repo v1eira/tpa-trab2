@@ -3,7 +3,6 @@ import time
 import os
 
 from Person import Person
-from compare import compare
 from selectionsort import selectionsort
 from insertionsort import insertionsort
 from mergesort import mergesort
@@ -11,6 +10,17 @@ from quicksort import quicksort
 from heapsort import heapsort
 # from introsort import introsort
 # from patiencesort import patiencesort
+
+
+def compare(a: Person, b: Person):
+    if (a.uid < b.uid):
+        return -1
+    
+    if (a.uid == b.uid):
+        return 0
+    
+    if (a.uid > b.uid):
+        return 1
 
 
 def fillArray(csvData):
