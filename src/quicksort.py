@@ -7,10 +7,10 @@ def quicksort(array, compare):
     
     for j in range(len(array)-1):
         if (compare(array[j+1], pivot) == -1):
-            array[j+1],array[i+1] = array[i+1], array[j+1]
+            array[j+1], array[i+1] = array[i+1], array[j+1]
             i += 1
     
-    array[0],array[i] = array[i],array[0]
+    array[0], array[i] = array[i], array[0]
 
     before = quicksort(array[:i], compare)
     after = quicksort(array[i+1:], compare)
