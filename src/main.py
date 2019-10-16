@@ -8,7 +8,7 @@ from insertionsort import insertionsort
 from mergesort import mergesort
 from quicksort import quicksort
 from heapsort import heapsort
-# from introsort import introsort
+from introsort import introsort
 # from patiencesort import patiencesort
 
 
@@ -91,6 +91,8 @@ def main():
         array = quicksort(array, compare)
     elif (algorithm == "heapsort"):
         array = heapsort(array, compare)
+    elif (algorithm == "introsort"):
+        array = introsort(array, compare)
     else:
         return print("Algoritmo inválido.")
 
