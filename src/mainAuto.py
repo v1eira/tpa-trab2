@@ -112,7 +112,7 @@ def main():
                 
                 end = time.time()
 
-                print("Fim ordenação\n")
+                print("Fim da ordenação\n")
                 arqOut.write(algorithm.__name__ + "," + str(numberOfLines) + "," + str((end-start)*1000) + "\n")
             
             arqIn.close()
