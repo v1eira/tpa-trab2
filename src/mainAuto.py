@@ -44,28 +44,34 @@ def main():
     dataPath = os.path.abspath('../data/')
     outputPath = os.path.abspath('../output/')
 
-    dataset = ["data_10e0.csv",
+    dataset = [
+    "data_10e0.csv",
     "data_10e1.csv",
     "data_10e2.csv",
     "data_10e3.csv",
     "data_10e4.csv",
+    "data_10e5.csv",
     "data_25e0.csv",
     "data_25e1.csv",
     "data_25e2.csv",
     "data_25e3.csv",
     "data_25e4.csv",
+    "data_25e5.csv",
     "data_50e0.csv",
     "data_50e1.csv",
     "data_50e2.csv",
     "data_50e3.csv",
     "data_50e4.csv",
+    "data_50e5.csv",
     "data_75e0.csv",
     "data_75e1.csv",
     "data_75e2.csv",
     "data_75e3.csv",
-    "data_75e4.csv"]
+    "data_75e4.csv",
+    "data_75e5.csv"]
 
-    algorithms = [selectionsort,
+    algorithms = [
+    selectionsort,
     insertionsort,
     mergesort,
     quicksort,

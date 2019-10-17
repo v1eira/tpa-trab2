@@ -25,13 +25,16 @@ def merge(array, start, end, compare):
     return array
 
 
-def mergesort(array, start, end, compare):
+def mergesort(array, compare, start=0, end=-1):
+    if end == -1:
+        end = len(array)-1
+    
     if start >= end:
         return
     
     middle = (start + end)//2
 
-    mergesort(array, start, middle, compare)
-    mergesort(array, middle + 1, end, compare)
+    mergesort(array, compare, start, middle)
+    mergesort(array, compare, middle + 1, end)
     
     return merge(array, start, end, compare)

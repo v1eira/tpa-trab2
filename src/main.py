@@ -86,7 +86,7 @@ def main():
     elif algorithm == "insertsort":
         array = insertionsort(array, compare)
     elif algorithm == "mergesort":
-        array = mergesort(array, 0, len(array)-1, compare)
+        array = mergesort(array, compare)
     elif algorithm == "quicksort":
         array = quicksort(array, compare)
     elif algorithm == "heapsort":
