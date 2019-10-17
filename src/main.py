@@ -9,18 +9,18 @@ from mergesort import mergesort
 from quicksort import quicksort
 from heapsort import heapsort
 from introsort import introsort
-# from patiencesort import patiencesort
+from patiencesort import patiencesort
 
 
 def compare(a: Person, b: Person):
-    if (a.uid < b.uid):
+    if a.uid < b.uid:
         return -1
     
-    if (a.uid == b.uid):
-        return 0
-    
-    if (a.uid > b.uid):
+    if a.uid > b.uid:
         return 1
+
+    else:
+        return 0
 
 
 def fillArray(csvData):
@@ -81,18 +81,20 @@ def main():
 
     start = time.time()
 
-    if (algorithm == "selectsort"):
+    if algorithm == "selectsort":
         array = selectionsort(array, compare)
-    elif (algorithm == "insertsort"):
+    elif algorithm == "insertsort":
         array = insertionsort(array, compare)
-    elif (algorithm == "mergesort"):
+    elif algorithm == "mergesort":
         array = mergesort(array, 0, len(array)-1, compare)
-    elif (algorithm == "quicksort"):
+    elif algorithm == "quicksort":
         array = quicksort(array, compare)
-    elif (algorithm == "heapsort"):
+    elif algorithm == "heapsort":
         array = heapsort(array, compare)
-    elif (algorithm == "introsort"):
+    elif algorithm == "introsort":
         array = introsort(array, compare)
+    elif algorithm == "patiencesort":
+        array = patiencesort(array, compare)
     else:
         return print("Algoritmo inválido.")
 
