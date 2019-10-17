@@ -102,7 +102,7 @@ def main():
 
     print("Fim ordenação")
 
-    print(algorithm + "       " + str(len(csvData)) + "       " + str(end-start) + "\n")
+    print(algorithm + "       " + str(len(csvData)) + "       " + str((end-start)*1000) + "\n")
 
     print("Escrevendo csv...")
     
