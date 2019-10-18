@@ -6,3 +6,10 @@ data/*
 output/*
 !output/.gitkeep
 !output/tests_.csv
+!output/heapsort.csv
+!output/insertionsort.csv
+!output/introsort.csv
+!output/mergesort.csv
+!output/patiencesort.csv
+!output/quicksort.csv
+!output/selectionsort.csv
